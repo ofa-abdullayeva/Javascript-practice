@@ -5,9 +5,21 @@ document.getElementById('result').innerHTML=numbers;
 function sortArray(){
 
     numbers.sort(function(x,y){
-        return y-x;
+        return y-x;  // Azalan sira ile duzur
+        
     });
     document.getElementById('result2').innerHTML=numbers;
 }
 
 sortArray();
+
+function sortArrayy(){
+
+    numbers.sort(function(x,y){
+        return x-y;  // Artan sira ile duzur
+        
+    });
+    document.getElementById('result3').innerHTML=numbers;
+}
+
+sortArrayy();

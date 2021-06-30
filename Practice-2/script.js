@@ -9,3 +9,5 @@ function sortArray(){
     });
     document.getElementById('result2').innerHTML=numbers;
 }
+
+sortArray();

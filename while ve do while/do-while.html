@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For In </title>
+</head>
+<body>
+    <p id="result"></p>
+    <button type="button" onclick="show()">Loop</button>
+
+    <script>
+
+        function show(){
+            var message="";i=11;
+
+            do{ //do while evvel yazdirir, sonra yoxlayir dogrudusa yazdirir
+                message += "Number:" + i+ "<br>";
+                i++;
+            }while(i<=10);
+            
+
+            document.getElementById('result').innerHTML=message;
+        }
+
+
+    </script>
+</body>
+</html>

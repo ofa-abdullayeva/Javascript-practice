@@ -13,7 +13,7 @@ value +="Coskun";  //value = value + "Coskun"
 value = firstName.length;
 
 
-//String methodlari
+//----------------String methodlari------------------
 
 
 value = firstName.concat(" ",lastName," "," Caz"); // Concat method   (Birlesdirmek ucun ist olunur)
@@ -45,5 +45,82 @@ value = firstName.toUpperCase();  // toUpperCase  (Hamisini boyuk herfe cevirir)
 
   value = langs.includes("java"); //true
   value = langs.includes("javascript"); //false
+
+
+
+
+//----------------Array methodlari------------------
+
+
+const numbers = [43,56,33,23,44,35,5];
+
+// const nummers2 = new Array[1,2,3,4,5,6,7];
+
+const langs1 = ["Python,Java","C++","JavaScript"];
+
+const a = ["Merhaba",22,null,3.14];
+
+//  Uzunluk
+  value = numbers.length;
+
+  //indeks
+
+  value = numbers[0];
+  value = numbers[2];
+  value = numbers[numbers.length -1];
+
+  //indexse gore deyeri deyismek
+  
+  numbers[2] = 1000;
+
+  value = numbers;
+
+  //Index Of
+
+  value = numbers.indexOf(1000);
+
+  //  Push (arrayin sonuna number elave etmek)
+
+  numbers.push(2000);
+  value = numbers;
+
+  //  unshift    (Evveline elave etmek)
+
+
+  numbers.unshift(3000);
+  value = numbers;
+
+  //  pop  (sondaki eded silinir)
+
+  numbers.pop;
+  value = numbers;
+
+  //  shift (evveldeki eded silinir)
+
+  numbers.pop;
+  value = numbers;
+
+    //  splice  (0-3 araligindakini silmek)
+
+    numbers.splice(0,3);
+    value = numbers;
+
+    //  reverse  (ters cevirir)
+
+    numbers.reverse;
+    value = numbers;
+  
+   //  sort (siralayir ilk reqeme gore)
+
+   numbers.sort();
+    
+   value = numbers.sort(function(x,y){ //kicikden boyuye siralayir
+     return x-y;
+   })
+
+   value = numbers.sort(function(x,y){ //bouyukden kiciye siralayir
+    return y-x;
+  })
+
 
 console.log(value)

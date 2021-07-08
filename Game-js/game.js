@@ -27,7 +27,7 @@ function newQuestion(){
 
     if (Operator.textContent == "/") {
         while(true) {
-            Number2.textContent = RandomNumber(0, 50);
+            Number2.textContent = RandomNumber(0,50);
             if (Number1.textContent%Number2.textContent==0) {
                 break;
             }
@@ -40,7 +40,7 @@ window.onload=function(){
     newQuestion();
 }
 
-//When the answer button is pressed, the evaluation process (cevapla butonuna basildigida deyerlendirme islemi)
+//When the answer button is pressed, the evaluation process (Cevapla butonuna basildigida deyerlendirme islemi)
 answer.onclick=function(){
     var ans,n1,n2;
     n1=Number(Number1.textContent);

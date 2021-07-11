@@ -111,9 +111,32 @@
     //    console.log('Good day')
     //  }
 
-     //   foo()
+    //  foo()
 
-      //Arrow funcion
-       let x = () =>{
+    // //Arrow funcion
+    //   let x = () =>{
 
-       }
+    //   }
+  ///-------------en boyuk reqemi tapmaq--------------
+    // var a = [1,2,3,7,45,9,10]
+    //  var max = 0
+
+    //  for(let i = 1;i<a.length;i++){
+    //    if(a[i]>max){
+    //      max = a[i]
+    //    }
+    //  }
+    //  console.log(max);
+
+    //================ Sonuncu yazilan 6_nin indexi=sini gosterin
+    var a = [1,2,3,4,5,6,6,10,6,10,20,25]
+
+    var index = 0
+
+    for(let i=0;i<a.length;i++){
+      if(a[i]===6){
+        index = i
+      }
+
+    }
+    console.log(index)

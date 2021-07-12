@@ -7,7 +7,7 @@ const heighOfeliya =1.61;
 indexVugar = (kqVugar) / (heightVugar*heightVugar);
 indexOfeliya = (kqOfeliya) / (heighOfeliya*heighOfeliya);
 
-console.log(indexVugar.toFixed(),indexOfeliya.toFixed());
+console.log(indexVugar,indexOfeliya);
 
 
 //   0 - 18.4: Ariq

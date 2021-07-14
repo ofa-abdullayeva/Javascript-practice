@@ -5,7 +5,7 @@ var elements = [
     {name:'cabel', price:3},
     {name:'case', price:9}
 ]
-//=================== Array Filter (ozu yeni array yaradir icine filterlenmis deyeri gonderir)======================//
+//================== Array Filter (ozu yeni array yaradir icine filterlenmis deyeri gonderir)==========//
 
 // var filtereditems = elements.filter((item)=>{
 //     return item.price > 50
@@ -13,7 +13,7 @@ var elements = [
 // console.log(filtereditems);
 
 
-//============== Filter funksiyasini evez etmek ucun ============//
+//================================= Filter funksiyasini evez etmek ucun ========================//
 
 
 // var element = [];
@@ -34,7 +34,7 @@ var elements = [
 // }
 // console.log(names);
 
-//================== Map() funksiyasi (yeni array yaradir ve icini doldurur)=====================//
+//============================== Map() funksiyasi (yeni array yaradir ve icini doldurur)=========================//
 
 // var filteredItems = elements
 // .map((item)=>{
@@ -45,7 +45,7 @@ var elements = [
 // })
 // console.log(filteredItems);
 
-//================ Map() funksiyasini For of ile evez etmek ============//
+//=============================== Map() funksiyasini For of ile evez etmek ===========================//
 // var element = []
 // for(items of elements){
 //    element.push(items)
@@ -53,8 +53,17 @@ var elements = [
 // }
 // console.log(element)
 
-var calculate  = elements.reduce((acc,item)=>{
-    return item.price + acc
-},0)
 
-console.log(calculate)
+
+//========= Reduce() funksiyasi (iki parametr alir, ikinci parametr yalniz bir defe ,birinci deyer ile toplanir) ===============//
+
+// var calculate  = elements.reduce((acc,item)=>{
+//     return item.price + acc
+// },0)
+
+// console.log(calculate)
+
+
+var x = elements.forEach((item)=>{
+    console.log(item.price)
+})

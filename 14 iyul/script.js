@@ -69,12 +69,18 @@ var elements = [
 
 //============  ForEach() ========================//
 
-var x = elements.forEach((item)=>{
-    console.log(item.price)
-})
+// var x = elements.forEach((item)=>{
+//     console.log(item.price)
+// })
 
-//============  Some() ========================//
-var cheaper = elements.some((item)=>{
-    return item.price<1
+//============  Some() ilk dogru aldigi cavabi qaytarir ========================//
+// var cheaper = elements.some((item)=>{
+//     return item.price<1
+// })
+// console.log(cheaper)
+
+//============  Every() hamisi dogrudusa qaytarir========================//
+var cheaper = elements.every((item)=>{
+    return item.price<100
 })
 console.log(cheaper)

@@ -1,3 +1,7 @@
+
+//=========== Array ve Methodlari ===============//
+
+
 var elements = [
     {name: 'phone' , price:30},
     {name:'Adapter', price:50},
@@ -63,7 +67,14 @@ var elements = [
 
 // console.log(calculate)
 
+//============  ForEach() ========================//
 
 var x = elements.forEach((item)=>{
     console.log(item.price)
 })
+
+//============  Some() ========================//
+var cheaper = elements.some((item)=>{
+    return item.price<1
+})
+console.log(cheaper)

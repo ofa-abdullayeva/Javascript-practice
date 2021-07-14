@@ -80,7 +80,36 @@ var elements = [
 // console.log(cheaper)
 
 //============  Every() hamisi dogrudusa qaytarir========================//
-var cheaper = elements.every((item)=>{
-    return item.price<100
+
+
+// var cheaper = elements.every((item)=>{
+//     return item.price<100
+// })
+// console.log(cheaper)
+
+
+//========================== Json =======================//
+
+fetch('https://jsonplaceholder.typicode.com/users')
+.then(res=>res.json())
+.then(x=>console.log(x))
+
+
+//================= json post method=================//
+fetch('https://jsonplaceholder.typicode.com/users',{
+
+
+    method:'POST',
+    headers:{
+        'Content-type':'application/json'
+    },
+    body:JSON.stringify({
+        username:'vugar'
+     })
+        
 })
-console.log(cheaper)
+ .then(res=>{
+     return res.json()
+}).then(
+     x=>console.log(x)
+ )

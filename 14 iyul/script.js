@@ -50,13 +50,19 @@ var elements = [
 // console.log(filteredItems);
 
 //=============================== Map() funksiyasini For of ile evez etmek ===========================//
-// var element = []
-// for(items of elements){
-//    element.push(items)
+var element = []
+for(items of elements){
+   element.push(items)
     
-// }
-// console.log(element)
+}
+console.log(element)
 
+//============== for dongusu ============//
+var element = [];
+for (i=0; i<elements.length;i++){
+    element.push(elements[i])
+}
+console.log(element)
 
 
 //========= Reduce() funksiyasi (iki parametr alir, ikinci parametr yalniz bir defe ,birinci deyer ile toplanir) ===============//
@@ -90,26 +96,26 @@ var elements = [
 
 //========================== Json =======================//
 
-fetch('https://jsonplaceholder.typicode.com/users')
-.then(res=>res.json())
-.then(x=>console.log(x))
+// fetch('https://jsonplaceholder.typicode.com/users')
+// .then(res=>res.json())
+// .then(x=>console.log(x))
 
 
 //================= json post method=================//
-fetch('https://jsonplaceholder.typicode.com/users',{
+// fetch('https://jsonplaceholder.typicode.com/users',{
 
 
-    method:'POST',
-    headers:{
-        'Content-type':'application/json'
-    },
-    body:JSON.stringify({
-        username:'vugar'
-     })
+//     method:'POST',
+//     headers:{
+//         'Content-type':'application/json'
+//     },
+//     body:JSON.stringify({
+//         username:'vugar'
+//      })
         
-})
- .then(res=>{
-     return res.json()
-}).then(
-     x=>console.log(x)
- )
+// })
+//  .then(res=>{
+//      return res.json()
+// }).then(
+//      x=>console.log(x)
+//  )

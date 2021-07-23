@@ -24,9 +24,21 @@
 
  
 //tek ededleri qaytar
-let elements = [1,2,4,6,8,9,15,17];
+// let elements = [1,2,4,6,8,9,15,17];
 
-var newitems = elements.filter((item)=>{
-    return item%2==1
+// var newitems = elements.filter((item)=>{
+//     return item%2==1
+// })
+// console.log(newitems)
+
+var obj = [
+    {name:'Vugar',position: 'React dev'},
+    {name:'Ofeliya',position: 'React Native'},
+    {name:'Mugan',position: 'Angular dev'},
+    {name:'Nergiz',position: 'javascript'}
+
+]
+var filteritem = obj.filter((item)=>{
+    return item.name == 'Ofeliya'
 })
-console.log(newitems)
+console.log(filteritem)

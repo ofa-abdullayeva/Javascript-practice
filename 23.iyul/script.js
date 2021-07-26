@@ -31,14 +31,15 @@
 // })
 // console.log(newitems)
 
-var obj = [
-    {name:'Vugar',position: 'React dev'},
-    {name:'Ofeliya',position: 'React Native'},
-    {name:'Mugan',position: 'Angular dev'},
-    {name:'Nergiz',position: 'javascript'}
+// var obj = [
+//     {name:'Vugar',position: 'React dev'},
+//     {name:'Ofeliya',position: 'React Native'},
+//     {name:'Mugan',position: 'Angular dev'},
+//     {name:'Nergiz',position: 'javascript'}
 
-]
-var filteritem = obj.filter((item)=>{
-    return item.name == 'Ofeliya'
-})
-console.log(filteritem)
+// ]
+// var filteritem = obj.filter((item)=>{
+//     return item.name == 'Ofeliya'
+// })
+// console.log(filteritem)
+

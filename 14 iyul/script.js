@@ -96,26 +96,28 @@ var elements = [
 
 //========================== Json =======================//
 
-fetch('https://jsonplaceholder.typicode.com/users')
-.then(res=>res.json())
-.then(x=>console.log(x))
+// fetch('https://jsonplaceholder.typicode.com/users')
+// .then(res=>res.json())
+// .then(x=>console.log(x))
 
 
-//================= json post method=================//
-fetch('https://jsonplaceholder.typicode.com/users',{
+// //================= json post method=================//
+// fetch('https://jsonplaceholder.typicode.com/users',{
 
 
-    method:'POST',
-    headers:{
-        'Content-type':'application/json'
-    },
-    body:JSON.stringify({
-        username:'vugar'
-     })
+//     method:'POST',
+//     headers:{
+//         'Content-type':'application/json'
+//     },
+//     body:JSON.stringify({
+//         username:'vugar'
+//      })
         
-})
- .then(res=>{
-     return res.json()
-}).then(
-     x=>console.log(x)
-    )
+// })
+//  .then(res=>{
+//      return res.json()
+// }).then(
+//      x=>console.log(x)
+//     )
+
+ 

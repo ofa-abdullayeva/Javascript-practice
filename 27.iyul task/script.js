@@ -26,15 +26,23 @@ console.log(c)
 // 3.bir cumle var, o cumlenin her sozunun. bas herflerini birlesdir
 
 let sentence = "Men JavaScript Oyrenirem"
+//       variant A
 
-let arr = sentence.split(" ")
-console.log(arr)
+// let arr = sentence.split(" ")
+// console.log(arr)
 
 
 let basherfler = ""
-let word = arr.map((item)=>{
-    return basherfler = basherfler + item[0]
+
+// let word = arr.map((item)=>{
+//     return basherfler  += item[0]
+// })
+
+// console.log(basherfler)
+
+
+//          variant B
+let arr = sentence.split(" ").map((item)=>{
+    return basherfler  += item[0]
 })
-
 console.log(basherfler)
-

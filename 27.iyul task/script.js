@@ -24,3 +24,17 @@ console.log(c)
 
 
 // 3.bir cumle var, o cumlenin her sozunun. bas herflerini birlesdir
+
+let sentence = "Men JavaScript Oyrenirem"
+
+let arr = sentence.split(" ")
+console.log(arr)
+
+
+let basherfler = ""
+let word = arr.map((item)=>{
+    return basherfler = basherfler + item[0]
+})
+
+console.log(basherfler)
+
